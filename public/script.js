@@ -42,6 +42,7 @@ socket.on("user-disconnected", userId => {
     if (peers[userId]) {
         peers[userId].close()
     }
+    console.log("user disconnected " + userId);
 })
 
 
